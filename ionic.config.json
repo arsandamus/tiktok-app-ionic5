@@ -1,0 +1,7 @@
+{
+  "name": "tiktok",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
