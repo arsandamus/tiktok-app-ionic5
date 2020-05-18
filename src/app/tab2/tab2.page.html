@@ -1,17 +1,66 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-searchbar></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+        <ion-icon slot="icon-only" name="scan-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content>
+  <ion-list-header>
+    <ion-label>Stories</ion-label>
+  </ion-list-header>
+  <div class="scroll-box">
+    <div class="storie-box" style="background-image: url(../../assets/photo-1.jpg);background-size: cover;">
+      <ion-avatar>
+        <img src="../../assets/photo-profil-1.jpeg" alt="">
+      </ion-avatar>
+      <ion-badge><ion-icon name="add"></ion-icon></ion-badge>
+      <p>Pink</p>
+    </div>
+    <div class="storie-box" style="background-image: url(../../assets/photo-2.jpg);background-size: cover;">
+      <ion-avatar>
+        <img src="../../assets/photo-profil-2.png" alt="">
+      </ion-avatar>
+      <ion-badge><ion-icon name="add"></ion-icon></ion-badge>
+      <p>Jessie</p>
+    </div>
+    <div class="storie-box" style="background-image: url(../../assets/photo-3.jpeg);background-size: cover;">
+      <ion-avatar>
+        <img src="../../assets/photo-profil-3.jpg" alt="">
+      </ion-avatar>
+      <ion-badge><ion-icon name="add"></ion-icon></ion-badge>
+      <p>Nikos</p>
+    </div>
+    <div class="storie-box" style="background-image: url(../../assets/photo-4.jpg);background-size: cover;">
+      <ion-avatar>
+        <img src="../../assets/photo-profil-4.jpg" alt="">
+      </ion-avatar>
+      <ion-badge><ion-icon name="add"></ion-icon></ion-badge>
+      <p>Sara</p>
+    </div>
+    <div class="storie-box" style="background-image: url(../../assets/photo-5.jpg);background-size: cover;">
+      <ion-avatar>
+        <img src="../../assets/photo-profil-5.jpeg" alt="">
+      </ion-avatar>
+      <ion-badge><ion-icon name="add"></ion-icon></ion-badge>
+      <p>Tim</p>
+    </div>
+    <div class="storie-box" style="background-image: url(../../assets/photo-6.jpg);background-size: cover;">
+      <ion-avatar>
+        <img src="../../assets/photo-profil-6.jpg" alt="">
+      </ion-avatar>
+      <ion-badge><ion-icon name="add"></ion-icon></ion-badge>
+      <p>Will</p>
+    </div>
+    <div class="storie-box" style="background-image: url(../../assets/photo-7.jpg);background-size: cover;">
+      <ion-avatar>
+        <img src="../../assets/photo-profil-7.png" alt="">
+      </ion-avatar>
+      <ion-badge><ion-icon name="add"></ion-icon></ion-badge>
+      <p>Fred</p>
+    </div>
+  </div>
 </ion-content>

@@ -1,0 +1,49 @@
+ion-list-header {
+    height: 55px;
+    padding-bottom: 0px;
+    padding-left: 11px;
+}
+ion-list-header ion-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 8px 0px;
+}
+.scroll-box {
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+}
+.storie-box {
+    position: relative;
+    margin-left: 5px;
+    width: 130px;
+    min-width: 130px;
+    height: 200px;
+    border-radius: 4px;
+}
+.storie-box ion-avatar {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    border: solid white 2px
+}
+.storie-box ion-badge {
+    position: absolute;
+    bottom: 22px;
+    left: 53px;
+    --color: white;
+    --background: #df4662;
+    --padding-start: 4px;
+    --padding-end: 4px;
+}
+.storie-box p {
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    margin: 0px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0px 1px 7px black;
+}
