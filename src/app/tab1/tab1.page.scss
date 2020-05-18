@@ -1,0 +1,123 @@
+.video-box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+.videoPlayer {
+    width: 100%;
+}
+.video-box .title {
+    position: absolute;
+    color: white;
+    bottom: 50px;
+    left: 10px;
+    font-size: 16px;
+}
+.video-box .title ion-icon {
+    color: white;
+    background-color: #56a0fc;
+    margin-bottom: -3px;
+    padding: 2px;
+    font-size: 10px;
+    border-radius: 50%;
+}
+.video-box .description {
+    position: absolute;
+    color: white;
+    bottom: 30px;
+    left: 10px;
+    font-size: 12px;
+}
+.song {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+}
+.song ion-icon {
+    margin-right: 10px;
+}
+.scroll-text {
+    overflow: hidden;
+    width: 100px;
+}
+.scroll-text p {
+    display: inline-block;
+    padding-right: 2em;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: defilement-rtl 7s infinite linear;
+}
+@keyframes defilement-rtl {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    100% {
+        transform: translate3d(-100%,0,0);
+    }
+}
+.button-box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 300px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button-box ion-avatar {
+    border: solid white 2px;
+    margin-bottom: -10px;
+}
+.button-box ion-badge {
+    --color: white;
+    --background: #DF4662;
+    --padding-start: 4px;
+    --padding-end: 4px;
+    margin-left: 4px;
+}
+.button-box img {
+    width: fit-content;
+    height: fit-content;
+}
+.icon-box {
+    width: 40px;
+    height: 50px;
+    color: white;
+}
+.icon-box ion-icon {
+    font-size: 30px;
+}
+.icon-box p {
+    font-size: 10px;
+    margin: 0px;
+}
+.avatar-box-2 {
+    width: 50px;
+    background: linear-gradient(#232323, #6f6f6f);
+    padding: 10px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    z-index: 5;
+}
+.avatar-box-2 ion-avatar {
+    transform: rotate(45deg);
+    height: 30px;
+    width: 30px;
+}
+.gif-music {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    height: 80px !important;
+    width: auto !important;
+    z-index: 0;
+}

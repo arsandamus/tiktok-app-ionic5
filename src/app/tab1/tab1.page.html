@@ -1,17 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content>
+  <ion-slides [options]="slideOpts">
+    <ion-slide>
+      <div class="video-box">
+        <video loop="true" preload="auto" autoplay="autoplay"
+          webkit-playsinline="playsinline" class="videoPlayer">
+           <source src="../../assets/video-feed-1.mp4" type="video/mp4" />
+        </video>
+        <h3 class="title">@Pink <ion-icon name="checkmark"></ion-icon></h3>
+        <p class="description">What's your favorite dance? #dance</p>
+        <div class="song">
+          <ion-icon name="musical-notes"></ion-icon>
+          <div class="scroll-text">
+            <p>Original sound - Pink</p>
+          </div>
+        </div>
+        <div class="button-box">
+          <div class="avatar-box">
+            <ion-avatar><img src="../../assets/photo-profil-1.jpeg"></ion-avatar>
+            <ion-badge><ion-icon name="add"></ion-icon></ion-badge>
+          </div>
+          <div class="icon-box">
+            <ion-icon name="heart-sharp"></ion-icon>
+            <p>93.8K</p>
+          </div>
+          <div class="icon-box">
+            <ion-icon name="chatbubble-ellipses-sharp"></ion-icon>
+            <p>892</p>
+          </div>
+          <div class="icon-box">
+            <ion-icon name="arrow-redo-sharp"></ion-icon>
+            <p>689</p>
+          </div>
+          <div class="avatar-box-2">
+            <ion-avatar><img src="../../assets/photo-profil-2.png"></ion-avatar>
+          </div>
+          <img src="../../assets/music-note.gif" class="gif-music">
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="video-box">
+        <video loop="true" preload="auto" autoplay="autoplay"
+          webkit-playsinline="playsinline" class="videoPlayer">
+           <source src="../../assets/video-feed-2.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
